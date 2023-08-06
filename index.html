@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contribution Graph</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="day-labels">
+        <div class="day-label day-label-pn">Пн</div>
+        <div class="day-label day-label-sr">Ср</div>
+        <div class="day-label day-label-pyat">Пят</div>
+    </div>
+    <div class="container">
+       
+
+        <div class="month-labels">
+
+        </div>
+    
+        <div class="contribution-graph" id="graph"></div>
+    
+        <div class="legend">
+            <div class="legend-label">Меньше</div>
+            <div class="legend-item" data-count-range="0">
+                <div class="legend-color white"></div>
+            </div>
+            <div class="legend-item" data-count-range="1-9"> 
+                <div class="legend-color blue-1-9"></div>
+            </div>
+            <div class="legend-item" data-count-range="10-19">
+                <div class="legend-color blue-10-19"></div>
+            </div>
+            <div class="legend-item" data-count-range="20-29"> 
+                <div class="legend-color blue-20-29"></div>
+            </div>
+            <div class="legend-item" data-count-range="30+">
+                <div class="legend-color blue-30"></div>
+            </div>
+            <div class="legend-label">Больше</div>
+        </div>
+    </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

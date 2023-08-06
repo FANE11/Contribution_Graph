@@ -1,0 +1,136 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+  }
+  
+  
+  .contribution-graph {
+    display: grid;
+    grid-template-columns: repeat(51, 1fr); 
+    gap: 2px;
+    max-width: 900px; 
+  }
+  
+  .contribution-cell {
+    width: 15px;
+    height: 15px;
+  }
+  
+
+  .white {
+    background-color: #EDEDED;
+  }
+  
+  .blue-1-9 {
+    background-color: #ACD5F2;
+  }
+  
+  .blue-10-19 {
+    background-color: #7FA8C9;
+  }
+  
+  .blue-20-29 {
+    background-color: #527BA0;
+  }
+  
+  .blue-30 {
+    background-color: #254E77;
+  }
+
+
+
+.tooltip {
+    position: absolute;
+    background-color: #000;
+    color: #fff;
+    padding-right: 2px;
+    padding-left: 2px;;
+    border-radius: 4px;
+    font-size: 12px;
+    z-index: 1;
+    text-align: center; 
+    
+  }
+  
+
+  .tooltip-date {
+    display: block;
+    color: #7C7C7C;
+  }
+
+  .contribution-cell.selected-cell {
+    outline: 2px solid #000; 
+  }
+
+  .legend {
+    display: flex;
+    align-items: center; 
+    margin-top: 20px;
+  }
+  
+  .legend-item {
+    display: flex;
+    align-items: center;
+  }
+  
+  .legend-color {
+    width: 15px;
+    height: 15px;
+    margin-right: 5px;
+  }
+  
+  .legend-label {
+    margin-right: 5px;
+    font-size: 12px;
+    color: #7C7C7C;
+  }
+
+  .month-labels {
+    display: grid;
+    grid-template-columns: repeat(51, 1fr);
+    gap: 2px;
+    max-width: 900px;
+    margin-left: 20px;
+    margin-bottom: 7px;
+  }
+  
+  .month-label {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 15px;
+    font-size: 12px;
+    color: #7C7C7C;
+    margin-right:47px;
+  }
+
+  .day-labels {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end; 
+}
+
+.day-label {
+    font-size: 12px;
+    color: #7C7C7C;
+}
+
+.day-label-pn {
+    margin-top: 30px;
+    margin-right: 5px;
+}
+
+.day-label-sr {
+    margin-top: 25px;
+    margin-bottom: 30px;
+    margin-right: 5px;
+}
+
+.day-label-pyat {
+    margin-bottom: 65px;
+    margin-right: 5px;
+}
